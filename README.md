@@ -20,11 +20,11 @@ A hand-coded end-to-end test suite for [The Internet](https://the-internet.herok
 - `.github/workflows/` — CI pipeline definition
 
 ## Running Locally
-\`\`\`
+​```
 npm install
 npx playwright install
 npx playwright test
-\`\`\`
+​```
 
 ## CI/CD
 Tests run automatically on every push to `main` via GitHub Actions, across Chromium, Firefox, and WebKit. Test reports are uploaded as artifacts for 30 days.

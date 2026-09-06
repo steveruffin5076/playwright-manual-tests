@@ -22,9 +22,7 @@ A hand-coded end-to-end test suite for [The Internet](https://the-internet.herok
 ## Running Locally
 ​```
 npm install
-
 npx playwright install
-
 npx playwright test
 ​```
 

@@ -22,3 +22,11 @@ test('shows error on invalid login', async ({ page }) => {
   await loginPage.login('wronguser', 'wrongpass');
   await expect(loginPage.flashMessage).toContainText('invalid');
 });
+
+
+test('can select a dropdown option', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/dropdown');
+  const dropdown = page.locator('#dropdown');
+  await dropdown.selectOption('2');
+  await expect(dropdown).toHaveValue('2');
+});
